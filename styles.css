@@ -111,6 +111,12 @@ form {
     background-color: #D9D9D9;
     cursor: pointer;
 }
+input[type=text]:focus {
+    outline: none;
+     border: 1px solid #1C62B9;
+     box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+ }
+ 
 /* -------------------NAVBAR CSS END ----------------------- */
 
 
@@ -122,7 +128,6 @@ form {
     height: 100vh;
     z-index: 1;
     width: 15%;
-    /* --rem:calc(100%-15%); */
     top: 70px;
     position: fixed;
     overflow: hidden;
@@ -197,12 +202,11 @@ hr {
     background-color: white;
     width: 1400px;
     display: flex;
-    gap: 15px;
     position: fixed;
+    gap: 15px;
     top: 60px;
     left: 260px;
     z-index: 2;
-    position: fixed;
     margin-right: 300px;
 }
 .below-nav:hover{
@@ -344,7 +348,7 @@ hr {
     }
 }
 
-@media screen and (min-width:200px) and (max-width:1313px) {
+@media screen and (min-width:416px) and (max-width:1313px) {
     .hide {
         display: none;
         
@@ -383,15 +387,16 @@ hr {
     }
 
 }
-@media screen and (max-width:199px) {
+@media screen and (max-width:415px) {
 
     .sidebar {
         display: none;
     }
     .video-section{
         width:100%;
-        left: 10px;
-        margin-right: px;
+        left: 0px;
+        margin-right: 0px;
+        padding: 0 20px;
     }
     .below-nav {
         left: 10px;
